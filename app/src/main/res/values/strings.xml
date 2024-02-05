@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AndroidDevTask</string>
+    <string name="txt_expenses"><u>Expences</u></string>
+    <string name="txt_incomings"><u>Incomings</u></string>
+    <string name="txt_cashback"><u>Cashback</u></string>
+    <string name="txt_azn_month">AZN / month</string>
+    <string name="action_view_statement"><u>View Statement</u></string>
+    <string name="txt_categories">Categories</string>
+    <string name="azn">%s AZN</string>
+    <string name="percent">%s</string>
+    <string name="azn_sign">%s ₼</string>
+    <string name="txt_of_all">%s of all</string>
+    <string name="title_stats">Stats</string>
+</resources>

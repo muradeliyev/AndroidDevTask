@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/statsFragment">
+
+    <fragment
+        android:id="@+id/statsFragment"
+        android:name="com.murad.androiddevtask.presentation.stats.StatsFragment"
+        android:label="fragment_stats"
+        tools:layout="@layout/fragment_stats">
+        <action
+            android:id="@+id/action_statsFragment_to_statementsBottomSheetDialogFragment"
+            app:destination="@id/statementsBottomSheetDialogFragment" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/statementsBottomSheetDialogFragment"
+        android:name="com.murad.androiddevtask.presentation.statements.StatementsBottomSheetDialogFragment"
+        android:label="bottom_sheet_statements"
+        tools:layout="@layout/bottom_sheet_statements">
+
+        <argument
+            android:name="model"
+            app:argType="com.murad.androiddevtask.presentation.statements.StatementsBottomSheetDialogFragment$UiModel" />
+    </dialog>
+
+</navigation>

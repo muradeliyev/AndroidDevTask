@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="16dp">
+
+    <ImageView
+        android:id="@+id/imageViewIcon"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:background="@drawable/bg_circle"
+        android:padding="12dp"
+        android:src="@drawable/ic_airplane"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/imageViewIcon"
+        app:layout_constraintTop_toTopOf="@id/imageViewIcon"
+        tools:text="Uber trip 20 UAW" />
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/auro_metal_saurus"
+        app:layout_constraintStart_toStartOf="@id/textViewName"
+        app:layout_constraintTop_toBottomOf="@id/textViewName"
+        tools:text="13:02  17.09.2018" />
+
+    <TextView
+        android:id="@+id/textViewAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewName"
+        tools:text="@string/azn_sign" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
